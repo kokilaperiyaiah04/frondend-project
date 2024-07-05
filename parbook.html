@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>booking page</title>
+    <link rel="icon" type="image/x-icon" href="13-3-1024.webp">
+    <style>
+        *body{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            
+        }
+        
+        .main-div{
+            background-image: url(bookimg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo{
+            margin: 15px 0;
+            font-size: 40px;
+            color: #000000;
+            padding: 5px 0px ;
+        }
+        .book-form{
+            background-color: #fff;
+            margin: 12px 12px;
+            border:  2px #000000;
+            border-radius: 5px;
+            box-shadow:   10px 10px 8px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 400px;
+        }
+    .form-detail h6{
+        font-size: 20px;
+        margin: 10px 12px;
+    }
+    .form-detail input{
+    margin: 2px 15px;
+    padding: 5px 5px;
+    width: 75%;
+    border-radius: 20px;
+
+    }
+    .checklist ul li{
+        list-style: none;
+        margin: 2px 15px;
+        padding: 2px 2px;
+    }
+    input[type=checkbox]{
+        
+        width: 15px;
+        height: 15px;
+        border-radius: 4px;
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+    .checklist h6{
+        font-size: 20px;
+        margin: 10px 12px;
+    }
+    .button{
+        text-align: center;
+    margin: 4px 4px;
+    }
+     .button .btn{
+        text-align: center;
+        margin: 10px;
+        width: 25vh;
+        font-size: 20px;
+        border-radius: 15px;
+        background-color: #f2f2f2;
+    }
+    </style>
+    
+</head>
+
+<body>
+    <section class="register">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                    <div class="main-div">
+                    <h1 class="logo"> Book your Slot</h1>
+                    <form action="parregister.php" method="post">
+                       
+                        <div class="book-form">
+                            <div class="form-head">
+                                <h2 style="text-align: center; margin-top: 3px;"><u>Enter The Details</u></h2>
+                            </div>
+                            <div class="form-detail">
+                            <h6>Name</h6>
+                            <input type="text" name="name"required="">
+                            <h6>Phone<a style="color: red;">*</a></h6>
+                            <input type="text" name="phoneno"required="">
+                            <h6>Email</h6>
+                            <input type="email" name="email">
+                            <h6>Cycle Brand</h6>
+                            <input type="text"name="brand"required="">
+                        </div>
+                         <div class="checklist">
+                                <h6>Select your service</h6>
+                                <ul>
+                                    <li><input type="checkbox"name="list[]" value="Puncher"id="check1"/>
+                                    <label for="check1">
+                                        Puncher
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Tyre change(F/B)"id="check2"/>
+                                    <label for="check2">
+                                        Tyre change(F/B)
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Tube change(F/B)"id="check3"/>
+                                    <label for="check">
+                                    Tube change(F/B)
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Rim set change(F/B)"id="check4"/>
+                                    <label for="check4">
+                                        Rim set change(F/B)
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Rim align adjustment(Foux change)"id="check5"/>
+                                    <label for="check5">
+                                        Rim align adjustment(Foux change)
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Handle adjustment"id="check6"/>
+                                    <label for="check6">
+                                        Handle adjustment
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Break check or change(F/B)"id="check7"/>
+                                    <label for="check7">
+                                        Break check or change(F/B)
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Chain cover changing"id="check8"/>
+                                    <label for="check8">
+                                        Chain cover changing
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Free wheel changing"id="check9"/>
+                                    <label for="check9">
+                                        Free wheel changing
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Hub set checking"id="check10"/>
+                                    <label for="check10">
+                                        Hub set checking
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Chain changing (or)cleaning"id="check11"/>
+                                    <label for="check11">
+                                        Chain changing (or)cleaning
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Handling bar change"id="check12"/>
+                                    <label for="12">
+                                        Handling bar change
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Margart checking (Bold,nut)changing"id="check13"/>
+                                    <label for="check13">
+                                        Margart checking (Bold,nut)changing
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Stand spring replace(or)stand change"id="check14"/>
+                                    <label for="check14">
+                                        Stand spring replace(or)stand change
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]"value="Bell changing(or)repair"id="check15"/>
+                                    <label for="check15">
+                                        Bell changing(or)repair
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Lock changing"id="check16"/>
+                                    <label for="check16">
+                                        Lock changing
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Basket replace"id="check17"/>
+                                    <label for="check17">
+                                        Basket replace
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Career replace"id="check18"/>
+                                    <label for="check18">
+                                        Career replace
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Seat replace"id="check19"/>
+                                    <label for="check19">
+                                        Seat replace
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Peadel set changing"id="check20"/>
+                                    <label for="check20">
+                                    Peadel set changing
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Center axil checking (or)replace"id="check21"/>
+                                    <label for="check21">
+                                        Center axil checking (or)replace
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="overall nut,bold check"id="check22"/>
+                                    <label for="check22">
+                                        overall nut,bold check
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Rear set"id="check23"/>
+                                    <label for="check23">
+                                        Rear set
+                                    </label></li>
+                                    <li><input type="checkbox"name="list[]" value="Fork changing(set of three..)"id="check24"/>
+                                    <label for="check24">
+                                        Fork changing(set of three..)
+                                    </label></li>
+                                </ul>
+                                
+
+                            </div>
+                        <div class="form-detail">
+                        <h6>Model</h6>
+                        <input type="text" name="model"required="">
+                        <h6>Address in detail<a style="color: red;">*</a></h6>
+                        <input type="text" name="address"required="">
+                    </div>
+                        <div class="button">
+                            <button type="submit" class="btn"value="submit" name="save">Submit</button>
+                        </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>

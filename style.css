@@ -1,0 +1,125 @@
+*{
+    font-family: 'Dancing Script', cursive;
+font-family: 'Poppins', sans-serif;
+}
+.banner{
+    background-image:url("le.jpg");
+    padding:  250px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+.text{
+    color: #f0f2f9;
+    padding: 30px;
+}
+/*service*/
+.headser{
+    background-color: #f0f2f5;
+}
+.service{
+background-color: #fff;
+    
+    border: 2px solid #000000;
+    border-radius: 15px;
+    
+} 
+.service h1{
+    color:#000000;
+}
+
+.service .btn{
+    padding: 20px;
+    margin-top:10px;
+    
+}
+.list{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+/*particualar service*/
+.checkli{
+    background-color: #f0f2f5;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+.checkli h1{
+    text-align: center;
+    border: 2px 3px 3px 2px;
+}
+.checkli p{
+    text-align: right;
+    justify-content: right;
+    color: red;
+    font-weight: bold;
+}
+.checkli ul li{
+    text-decoration: none;
+    display: flex;
+    font-weight: bold;
+}
+.checkli .btn{
+margin: 10px;
+width: 200px;
+}
+
+
+/*contact*/
+.cont{
+    
+    color:white;
+     
+}
+.contact{
+    background-color: #000000;
+    padding: 5px;
+}
+.cont .bttn{
+    color: white;
+    margin:5px 25px ;
+}
+ .cont p{
+    color: #7D7C7C;
+}
+.contact .icon {
+    justify-content: end;
+     text-align: end;
+     margin-right: 4px;
+}
+/*about section*/
+.abuse{
+    background-color: #000000;
+    color: white;
+    padding: 2px 35px;
+    margin: 5px;
+    text-align: center;
+    width: 50px 100px;
+}
+.absec{
+    margin: 2px;
+
+}
+.icon a{
+    justify-content: right;
+}
+/*review*/
+ .repic .review{
+    text-align: center;
+    padding: 20px 20px 20px 20px;
+    color: white;
+    margin: 40px;
+
+ }
+ .repic{
+    margin: 2px;
+    padding: 15px;
+ }
+ .repic .imag{
+    border-radius: 10px;
+    margin: 5px;
+ }
+ .repic .rev{
+    margin: 5px;
+ }

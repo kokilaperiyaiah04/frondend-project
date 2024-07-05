@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>booking page</title>
+    <link rel="icon" type="image/x-icon" href="13-3-1024.webp">
+    <style>
+        *body{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            
+        }
+        
+        .main-div{
+            background-image: url(bookimg.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo{
+            margin: 15px 0;
+            font-size: 40px;
+            color: #000000;
+            padding: 5px 0px ;
+        }
+        .book-form{
+
+            background-color: #fff;
+            margin: 12px 12px;
+            border:  2px #000000;
+            border-radius: 5px;
+            box-shadow:   10px 10px 8px 12px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 400px;
+        }
+    .form-detail h6{
+        font-size: 20px;
+        margin: 10px 12px;
+    }
+    .form-detail input{
+    margin: 2px 15px;
+    padding: 5px 5px;
+    width: 75%;
+    border-radius: 20px;
+
+    }
+
+    .radi h6{
+        font-size: 20px;
+        margin: 10px 2px;
+    }
+    .radi.input["radio"]+label{
+    display: flex;
+    flex-direction:column;
+    }
+    .button{
+        text-align: center;
+    margin: 4px 4px;
+    }
+     .button .btn{
+        text-align: center;
+        margin: 10px;
+        width: 25vh;
+        font-size: 20px;
+        border-radius: 15px;
+        background-color: #f2f2f2;
+    }
+    </style>
+    
+</head>
+
+<body>
+    <section class="register">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-12">
+                <div class="main-div">
+                    <h1 class="logo"> Book your Slot</h1>
+                    <form  action="registration.php" method="post">
+                       
+                        <div class="book-form">
+                            <div class="form-head">
+                                <h2 style="text-align: center; margin-top: 3px;"><u>Enter the details</u></h2>
+                            </div>
+                            <div class="form-detail">
+                            <h6>Name</h6>
+                            <input type="text" name="name" required="">
+                            <h6>Phone<a style="color: red;">*</a></h6>
+                            <input type="text" name="phoneno"required="">
+                            <h6>Email</h6>
+                            <input type="email" name="email"required="">
+                            <h6>Cycle Brand</h6>
+                            <input type="text" name="brand"required="">
+                        </div>
+                             <div class="radi">
+                                <h6>Type Of Serivce <a style="color: red;">*</a></h6>
+                             <input type="radio" id="option1" value="Basic service" name="service"required="">
+                             <lable for="option1">Basic Sercvice</lable><br>
+                             <input type="radio" id="option2"  value="Standard Service"name="service"required="">
+                             <lable for="option2">Standard Service</lable><br>
+                             <input type="radio" id="option3" value="Advanced Service"name="service"required="">
+                             <lable for="option3">Advanced Service</lable><br>
+
+                            </div>
+                        <div class="form-detail">
+                        <h6>Model</h6>
+                        <input type="text" name="model"required="">
+                        <h6>Address in detail<a style="color: red;">*</a></h6>
+                        <input type="text" name="address"required="">
+                    </div>
+                        <div class="button">
+                            <button type="submit" class="btn" name="save"value="Submit">Submit</button>
+                        </div>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+    </section>
+</body>
+</html>
